@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh('powershell -version') 
+             echo 'We are Starting the Testing'
+
             } 
         }
     }
