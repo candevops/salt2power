@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                pwsh  ("., './analytic_engine.ps1'")            
+                sh('pwsh -version') 
             } 
         }
     }
