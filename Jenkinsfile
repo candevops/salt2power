@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                PowerShell ("., './analytic_engine.ps1'")            
+                pwsh  ("., './analytic_engine.ps1'")            
             } 
         }
     }
