@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
              echo 'We are Starting the Testing'
-pwsh ( returnStatus: true, script: "&./analytic_engine.ps1")
+sh 'pwsh var/lib/jenkins/workspace/salt2power/analytic_engine.ps1' 
             } 
         }
     }
