@@ -12,7 +12,7 @@ pipeline {
                 $args5 = "sxs"
                 $args6 = "zip"
                 
-                Powershell script: "C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1" $args0 $args1 $args2 $args3 $args4 $args5 $args6
+                Powershell "C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1" $args0 $args1 $args2 $args3 $args4 $args5 $args6
             } 
         }
     }
