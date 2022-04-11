@@ -13,7 +13,7 @@ pipeline {
                 //$args6 = "zip"                
                 //Powershell "C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1" $args0 $args1 $args2 $args3 $args4 $args5 $args6
                 //powershell(" 'C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1' ") 
-                powershell -Executionpolicy  -ErrorActionPreference  -ProgressPreference  returnStatus: true, script: 
+                powershell -Executionpolicy : 'bypass'  -ErrorActionPreference : 'Stop'  -ProgressPreference : 'SilentlyContinue'  returnStatus: true, script: 
                     """C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1 1.2.0-beta G:\\App\\Aurora aurora analytic-engine 6.5.0-beta.24 sxs zip"""
             } 
         }
