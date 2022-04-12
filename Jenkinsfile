@@ -11,7 +11,7 @@ pipeline {
                 //$args4 = "6.5.0-beta.24"
                 //$args5 = "sxs"
                 //$args6 = "zip"                
-         """ Powershell.exe -Executionpolicy bypass -ErrorActionPreference Stop -ProgressPreference SilentlyContinue -File  ".\\scripts\\install_analytic_engine.ps1" $credit_version $artifact_install $artifact_zip $environment_variables 
+         """ Powershell.exe -Executionpolicy bypass -ErrorActionPreference Stop -ProgressPreference SilentlyContinue -File  .\\scripts\\install_analytic_engine.ps1 $credit_version $artifact_install $artifact_zip $environment_variables 
 """
                 //Powershell "C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1" $args0 $args1 $args2 $args3 $args4 $args5 $args6
                 //powershell(" 'C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1' ") 
