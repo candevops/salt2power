@@ -11,7 +11,7 @@ pipeline {
                 //$args4 = "6.5.0-beta.24"
                 //$args5 = "sxs"
                 //$args6 = "zip"
-                powershell script: "$ExecutionPolicy='ByPass'; \$ErrorActionPreference='Stop';\$ProgressPreference= 'SilentlyContinue';'C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1 1.2.0-beta G:\\App\\Aurora aurora analytic-engine 6.5.0-beta.24 sxs zip'"
+                powershell script: "$ExecutionPolicy='bypass'; \$ErrorActionPreference='Stop';\$ProgressPreference= 'SilentlyContinue';'C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1 1.2.0-beta G:\\App\\Aurora aurora analytic-engine 6.5.0-beta.24 sxs zip'"
                 //powershell.exe -NonInteractive $ExecutionPolicy='ByPass' "& 'C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1'"
        //         powershell script: """ ErrorActionPreference = "Stop" $ProgressPreference = "SilentlyContinue"  & .\\scripts\\install_analytic_engine.ps1 test1 test2 tes3 test4 """
 //powershell.exe $ExecutionPolicy="bypass" $ErrorActionPreference = "Stop"ProgressPreference= "SilentlyContinue" "& 'C:/MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1' test1 "
