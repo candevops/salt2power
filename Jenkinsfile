@@ -12,7 +12,7 @@ pipeline {
                 //$args5 = "sxs"
                 //$args6 = "zip"                
        //         powershell script: """ ErrorActionPreference = "Stop" $ProgressPreference = "SilentlyContinue"  & .\\scripts\\install_analytic_engine.ps1 test1 test2 tes3 test4 """
-powershell.exe -NonInteractive $ErrorActionPreference = "Stop" "& 'C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1' test1 "
+powershell.exe $ExecutionPolicy="bypass" $ErrorActionPreference = "Stop"ProgressPreference= "SilentlyContinue" "& 'C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1' test1 "
                 //Powershell "C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1" $args0 $args1 $args2 $args3 $args4 $args5 $args6
                 //powershell(" 'C:\\MyData\\Workspace_cloud_devops\\1-salt-to-powershell\\analytic_engine.ps1' ") 
               //  powershell   returnStatus: true, script: '''
