@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-//$args[0] = "6.6.0"
+// $args[0] = "6.6.0"
 // $args[1] = "C:\\App\\Aurora"
 // $args[2] = "analytic_engine\\6.6.0-SNAPSHOT"
 // $args[3] = "analytic-engine"
